@@ -1,0 +1,10 @@
+---
+applications:
+ - name: springboot-mongo
+   memory: 750M
+   instances: 1
+   buildpack: java_buildpack
+   path : target/springboot-mongo-pcf-0.0.1-SNAPSHOT.jar
+   host : springboot-mongo-pcf-ranjanipr94
+   services:
+    - mongo-db
